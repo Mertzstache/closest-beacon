@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D675B6B22539E6C3DBE8F45 /* libPods-closest-beacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B89F8E6D7C3DFB8A2C80CD /* libPods-closest-beacon.a */; };
+		520BA0BE1FC1F1910004BD80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BA0BD1FC1F1910004BD80 /* AppDelegate.swift */; };
+		520BA0C01FC1F1910004BD80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BA0BF1FC1F1910004BD80 /* ViewController.swift */; };
+		520BA0C31FC1F1910004BD80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520BA0C11FC1F1910004BD80 /* Main.storyboard */; };
+		520BA0C51FC1F1910004BD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520BA0C41FC1F1910004BD80 /* Assets.xcassets */; };
+		520BA0C81FC1F1910004BD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520BA0C61FC1F1910004BD80 /* LaunchScreen.storyboard */; };
+		520BA0D31FC1F1910004BD80 /* closest_beaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520BA0D21FC1F1910004BD80 /* closest_beaconTests.swift */; };
+		520BA0E51FC1F5310004BD80 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BA0E41FC1F3240004BD80 /* SystemConfiguration.framework */; };
+		520BA0E61FC1F5350004BD80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BA0E31FC1F3150004BD80 /* Foundation.framework */; };
+		520BA0E71FC1F53D0004BD80 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BA0E21FC1F3020004BD80 /* CoreBluetooth.framework */; };
+		520BA0E81FC1F5400004BD80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BA0E11FC1F2D10004BD80 /* CoreLocation.framework */; };
+		520BA0EA1FC1F54D0004BD80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BA0E91FC1F54D0004BD80 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		520BA0CF1FC1F1910004BD80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520BA0B21FC1F1910004BD80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520BA0B91FC1F1910004BD80;
+			remoteInfo = "closest-beacon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29800C2EC4A52BD058F9C0F1 /* Pods-closest-beacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-closest-beacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-closest-beacon/Pods-closest-beacon.debug.xcconfig"; sourceTree = "<group>"; };
+		520BA0BA1FC1F1910004BD80 /* closest-beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "closest-beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		520BA0BD1FC1F1910004BD80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		520BA0BF1FC1F1910004BD80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		520BA0C21FC1F1910004BD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		520BA0C41FC1F1910004BD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		520BA0C71FC1F1910004BD80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		520BA0C91FC1F1910004BD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520BA0CE1FC1F1910004BD80 /* closest-beaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "closest-beaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		520BA0D21FC1F1910004BD80 /* closest_beaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closest_beaconTests.swift; sourceTree = "<group>"; };
+		520BA0D41FC1F1910004BD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520BA0E11FC1F2D10004BD80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		520BA0E21FC1F3020004BD80 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		520BA0E31FC1F3150004BD80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		520BA0E41FC1F3240004BD80 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		520BA0E91FC1F54D0004BD80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		520BA0EB1FC1F5D10004BD80 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		97B89F8E6D7C3DFB8A2C80CD /* libPods-closest-beacon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-closest-beacon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75470015AF3BAC9E95AE18F /* Pods-closest-beacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-closest-beacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-closest-beacon/Pods-closest-beacon.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		520BA0B71FC1F1910004BD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520BA0EA1FC1F54D0004BD80 /* UIKit.framework in Frameworks */,
+				520BA0E81FC1F5400004BD80 /* CoreLocation.framework in Frameworks */,
+				520BA0E51FC1F5310004BD80 /* SystemConfiguration.framework in Frameworks */,
+				520BA0E71FC1F53D0004BD80 /* CoreBluetooth.framework in Frameworks */,
+				520BA0E61FC1F5350004BD80 /* Foundation.framework in Frameworks */,
+				4D675B6B22539E6C3DBE8F45 /* libPods-closest-beacon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520BA0CB1FC1F1910004BD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520BA0B11FC1F1910004BD80 = {
+			isa = PBXGroup;
+			children = (
+				520BA0BC1FC1F1910004BD80 /* closest-beacon */,
+				520BA0D11FC1F1910004BD80 /* closest-beaconTests */,
+				520BA0BB1FC1F1910004BD80 /* Products */,
+				520BA0E01FC1F2D10004BD80 /* Frameworks */,
+				F69F4C0F317BBE3346F87A34 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		520BA0BB1FC1F1910004BD80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520BA0BA1FC1F1910004BD80 /* closest-beacon.app */,
+				520BA0CE1FC1F1910004BD80 /* closest-beaconTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		520BA0BC1FC1F1910004BD80 /* closest-beacon */ = {
+			isa = PBXGroup;
+			children = (
+				520BA0BD1FC1F1910004BD80 /* AppDelegate.swift */,
+				520BA0BF1FC1F1910004BD80 /* ViewController.swift */,
+				520BA0C11FC1F1910004BD80 /* Main.storyboard */,
+				520BA0EB1FC1F5D10004BD80 /* ObjCBridge.h */,
+				520BA0C41FC1F1910004BD80 /* Assets.xcassets */,
+				520BA0C61FC1F1910004BD80 /* LaunchScreen.storyboard */,
+				520BA0C91FC1F1910004BD80 /* Info.plist */,
+			);
+			path = "closest-beacon";
+			sourceTree = "<group>";
+		};
+		520BA0D11FC1F1910004BD80 /* closest-beaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				520BA0D21FC1F1910004BD80 /* closest_beaconTests.swift */,
+				520BA0D41FC1F1910004BD80 /* Info.plist */,
+			);
+			path = "closest-beaconTests";
+			sourceTree = "<group>";
+		};
+		520BA0E01FC1F2D10004BD80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520BA0E91FC1F54D0004BD80 /* UIKit.framework */,
+				520BA0E41FC1F3240004BD80 /* SystemConfiguration.framework */,
+				520BA0E31FC1F3150004BD80 /* Foundation.framework */,
+				520BA0E21FC1F3020004BD80 /* CoreBluetooth.framework */,
+				520BA0E11FC1F2D10004BD80 /* CoreLocation.framework */,
+				97B89F8E6D7C3DFB8A2C80CD /* libPods-closest-beacon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F69F4C0F317BBE3346F87A34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29800C2EC4A52BD058F9C0F1 /* Pods-closest-beacon.debug.xcconfig */,
+				C75470015AF3BAC9E95AE18F /* Pods-closest-beacon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		520BA0B91FC1F1910004BD80 /* closest-beacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520BA0D71FC1F1910004BD80 /* Build configuration list for PBXNativeTarget "closest-beacon" */;
+			buildPhases = (
+				E9079ECD3B443EAE3A8A7B9C /* [CP] Check Pods Manifest.lock */,
+				520BA0B61FC1F1910004BD80 /* Sources */,
+				520BA0B71FC1F1910004BD80 /* Frameworks */,
+				520BA0B81FC1F1910004BD80 /* Resources */,
+				CFEA12B687E4F8F51BCA4D52 /* [CP] Embed Pods Frameworks */,
+				6E848578939A3C8BF4289ADC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "closest-beacon";
+			productName = "closest-beacon";
+			productReference = 520BA0BA1FC1F1910004BD80 /* closest-beacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		520BA0CD1FC1F1910004BD80 /* closest-beaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520BA0DA1FC1F1910004BD80 /* Build configuration list for PBXNativeTarget "closest-beaconTests" */;
+			buildPhases = (
+				520BA0CA1FC1F1910004BD80 /* Sources */,
+				520BA0CB1FC1F1910004BD80 /* Frameworks */,
+				520BA0CC1FC1F1910004BD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				520BA0D01FC1F1910004BD80 /* PBXTargetDependency */,
+			);
+			name = "closest-beaconTests";
+			productName = "closest-beaconTests";
+			productReference = 520BA0CE1FC1F1910004BD80 /* closest-beaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		520BA0B21FC1F1910004BD80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Eric Mertz";
+				TargetAttributes = {
+					520BA0B91FC1F1910004BD80 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					520BA0CD1FC1F1910004BD80 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 520BA0B91FC1F1910004BD80;
+					};
+				};
+			};
+			buildConfigurationList = 520BA0B51FC1F1910004BD80 /* Build configuration list for PBXProject "closest-beacon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 520BA0B11FC1F1910004BD80;
+			productRefGroup = 520BA0BB1FC1F1910004BD80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				520BA0B91FC1F1910004BD80 /* closest-beacon */,
+				520BA0CD1FC1F1910004BD80 /* closest-beaconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		520BA0B81FC1F1910004BD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520BA0C81FC1F1910004BD80 /* LaunchScreen.storyboard in Resources */,
+				520BA0C51FC1F1910004BD80 /* Assets.xcassets in Resources */,
+				520BA0C31FC1F1910004BD80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520BA0CC1FC1F1910004BD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E848578939A3C8BF4289ADC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-closest-beacon/Pods-closest-beacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFEA12B687E4F8F51BCA4D52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-closest-beacon/Pods-closest-beacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9079ECD3B443EAE3A8A7B9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-closest-beacon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		520BA0B61FC1F1910004BD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520BA0C01FC1F1910004BD80 /* ViewController.swift in Sources */,
+				520BA0BE1FC1F1910004BD80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520BA0CA1FC1F1910004BD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520BA0D31FC1F1910004BD80 /* closest_beaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		520BA0D01FC1F1910004BD80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520BA0B91FC1F1910004BD80 /* closest-beacon */;
+			targetProxy = 520BA0CF1FC1F1910004BD80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		520BA0C11FC1F1910004BD80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520BA0C21FC1F1910004BD80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		520BA0C61FC1F1910004BD80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520BA0C71FC1F1910004BD80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		520BA0D51FC1F1910004BD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		520BA0D61FC1F1910004BD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		520BA0D81FC1F1910004BD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29800C2EC4A52BD058F9C0F1 /* Pods-closest-beacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLGNTBJ9ZB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "closest-beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.closest-beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		520BA0D91FC1F1910004BD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75470015AF3BAC9E95AE18F /* Pods-closest-beacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLGNTBJ9ZB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "closest-beacon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.closest-beacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		520BA0DB1FC1F1910004BD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLGNTBJ9ZB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "closest-beaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.closest-beaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/closest-beacon.app/closest-beacon";
+			};
+			name = Debug;
+		};
+		520BA0DC1FC1F1910004BD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PLGNTBJ9ZB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "closest-beaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.closest-beaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/closest-beacon.app/closest-beacon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520BA0B51FC1F1910004BD80 /* Build configuration list for PBXProject "closest-beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520BA0D51FC1F1910004BD80 /* Debug */,
+				520BA0D61FC1F1910004BD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520BA0D71FC1F1910004BD80 /* Build configuration list for PBXNativeTarget "closest-beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520BA0D81FC1F1910004BD80 /* Debug */,
+				520BA0D91FC1F1910004BD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520BA0DA1FC1F1910004BD80 /* Build configuration list for PBXNativeTarget "closest-beaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520BA0DB1FC1F1910004BD80 /* Debug */,
+				520BA0DC1FC1F1910004BD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 520BA0B21FC1F1910004BD80 /* Project object */;
+}
